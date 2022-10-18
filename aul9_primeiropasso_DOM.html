@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Iniciando com o DOM</h1>
+    <p>
+        Aqui vai o resultado
+    </p>
+
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript
+    </p>
+    <div id="ght">
+        Clique em min
+    </div>
+    <Script>
+        var p1 = window.document.getElementsByTagName('p')[0] //pega o primeiro paragrafo [0], e grava em p1
+        window.document.write('começando meu primeiro DOM </br>')
+        window.document.write(p1.innerText) //imprime o paragrafo retido, p1
+        //var g = window.document.getElementById('ght')
+        var g2 =window.document.querySelector('div#ght')
+        //g.style.background='yellow'
+        g2.style.background='green'
+
+
+    </Script>
+    
+</body>
+</html>
