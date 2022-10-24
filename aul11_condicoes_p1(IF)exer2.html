@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a condição IF</title>
+</head>
+<body>
+    <h1> Testando a condição IF.</h1>
+    
+    <!--====================================================================
+        
+        <script>
+        var vel=51
+        if(vel>50){ // Se for verdadeiro, será executado as duas condições. Se falso. Só a ultima.
+            window.document.write(`Limite de velacidade ultrapassado, você foi multado.`)
+        }
+
+        window.document.write(` Sua velocidade é ${vel}KM/H. Sempre use o cinto de segurança.`)
+    </script>-->
+
+    <!--<script>
+
+        var pais='usa'
+
+        if(pais=='br'){ Em IF/Else, Será executada apenas a condição verificada, 
+            window.document.write('Você é brasileiro')
+
+        } else{
+            window.document.write('Você é estrangeiro.')
+        }
+
+    </script>-->
+
+
+    
+
+
+        Onde você nasceu?<input type="text" name="txtvel" id="txtvel">Pais
+        <input type="button" value="verificar" onclick="calcular()">
+
+        <div id="res"> Em qual pais você nasceu?</br>.
+
+        </div>
+
+    <script>
+            function calcular(){
+                var txtv=window.document.querySelector('input#txtvel')
+                var res=window.document.querySelector('div#res')
+                var vel= String(txtv.value)
+
+                if (vel=='br') {
+
+                    res.innerHTML ='Você é brasileiro'
+
+                }else{
+
+                
+                res.innerHTML='Você é estrangeiro'
+                }
+            } 
+
+            
+        
+            
+        
+
+    </script>
+
+
+
+
+
+    
+    
+</body>
+</html>
